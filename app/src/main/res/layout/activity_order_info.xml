@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="单号"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="卖家"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="时间"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="状态"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="收货地址"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="总金额"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_info_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|start"
+                android:maxLines="1"
+                android:text="12384120"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/order_info_store_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="XXX水果店"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:id="@+id/order_info_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="2017-07-12 12:00"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:id="@+id/order_info_state"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="交易成功"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:id="@+id/order_info_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="浙江大学玉泉校区30栋409"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+            <TextView
+                android:id="@+id/order_info_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="￥25"
+                android:textSize="14sp"
+                android:gravity="center_vertical|start"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ListView
+            android:id="@+id/order_info_fruit_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0dip" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish_order"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="已收货" />
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/order_info_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|start"
+                android:text="评论"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:ems="10"
+                android:inputType="textMultiLine"
+            android:textColor="@color/textGrey"
+                android:text="Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:padding="5dp">
+
+            <RatingBar
+                android:id="@+id/order_info_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/order_info_comment"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="评论"
+                android:textColor="@color/colorMain"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_write_comment"
+                android:drawableStart="@drawable/ic_write_comment"
+                android:background="@drawable/register_button"
+                android:layout_gravity="center_vertical|end"/>
+
+        </LinearLayout>
+
+    -->
+
+</LinearLayout>

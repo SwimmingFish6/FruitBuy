@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar" android:id="@+id/include" />
+
+        <LinearLayout
+            android:id="@+id/tab_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FCF8FC"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <!-- 水果管理 -->
+            <FrameLayout
+                android:id="@+id/layout_fruit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/view_fruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/column_fruits_management"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/menu_fruit"/>
+            </FrameLayout>
+
+            <!-- 添加水果 -->
+            <FrameLayout
+                android:id="@+id/layout_addfruit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/view_addfruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/column_add_fruits"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/menu_addfruit"/>
+            </FrameLayout>
+
+            <!-- 订单管理 -->
+            <FrameLayout
+                android:id="@+id/layout_order"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/view_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:drawableTop="@drawable/menu_order"
+                    android:text="@string/column_order_management"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <!-- 账户管理 -->
+            <FrameLayout
+                android:id="@+id/layout_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/view_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/column_setting"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/menu_setting"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab_Menu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/include">
+        </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

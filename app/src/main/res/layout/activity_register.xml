@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="open.fruitbuy.Register">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/app_username"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorMain"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/register_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_username"
+            android:layout_alignStart="@+id/register_username"
+            android:layout_below="@+id/register_username"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/app_realname"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorMain"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_realname"
+            android:layout_alignStart="@+id/register_realname"
+            android:layout_below="@+id/register_realname"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/app_password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorMain" />
+
+        <EditText
+            android:id="@+id/register_chechpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_pwd"
+            android:layout_alignStart="@+id/register_pwd"
+            android:layout_below="@+id/register_pwd"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/app_checkPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/colorMain" />
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_chechpwd"
+            android:layout_alignStart="@+id/register_chechpwd"
+            android:layout_below="@+id/register_chechpwd"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/app_phone"
+            android:inputType="phone"
+            android:textColor="@color/colorMain" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_phone"
+            android:layout_alignStart="@+id/register_phone"
+            android:layout_below="@+id/register_phone"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/app_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorMain"/>
+        <Button
+            android:id="@+id/register_send_code"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/register_email"
+            android:layout_toEndOf="@id/register_email"
+            android:layout_alignTop="@id/register_email"
+            android:text="发送验证码"
+            android:textColor="@color/colorMain"
+            android:background="@drawable/register_button" />
+
+        <EditText
+            android:id="@+id/register_code"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_email"
+            android:layout_alignStart="@+id/register_email"
+            android:layout_below="@+id/register_email"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="验证码"
+            android:textColor="@color/colorMain" />
+
+        <Button
+            android:id="@+id/register_commit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/register_code"
+            android:layout_alignStart="@+id/register_code"
+            android:layout_below="@+id/register_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="13"
+            android:background="@drawable/login_button"
+            android:text="@string/app_register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/register_return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/register_button"
+            android:text="@string/app_regLogin"
+            android:textColor="@color/colorMain"
+            android:layout_alignLeft="@+id/register_commit_button"
+            android:layout_alignStart="@+id/register_commit_button"
+            android:ems="13"
+            android:layout_below="@+id/register_commit_button"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="@string/app_bankcardNo"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorMain"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/bank_card_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/bank_card"
+            android:layout_alignStart="@+id/bank_card"
+            android:layout_below="@+id/bank_card"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="@string/app_password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorMain" />
+
+        <Button
+            android:id="@+id/bind_bank_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/bank_card_pwd"
+            android:layout_alignLeft="@+id/bank_card_pwd"
+            android:layout_alignRight="@+id/bank_card_pwd"
+            android:layout_alignStart="@+id/bank_card_pwd"
+            android:layout_below="@+id/bank_card_pwd"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/login_button"
+            android:text="@string/app_bankbind"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

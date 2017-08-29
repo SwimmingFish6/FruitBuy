@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/store_component_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text="玉泉北门水果店"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/store_component_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text="西湖区西溪路408号"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+        <TextView
+            android:id="@+id/store_component_score"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="center_vertical|start"
+            android:text="评分:4.9"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ic_store_score"
+            android:drawableStart="@drawable/ic_store_score"/>
+
+        <TextView
+            android:id="@+id/store_component_volume"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_store_volume"
+            android:drawableStart="@drawable/ic_store_volume"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text="销量:1201"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

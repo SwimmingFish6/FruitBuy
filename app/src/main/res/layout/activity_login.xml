@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="open.fruitbuy.Login">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:ems="10"
+            android:hint="@string/app_username"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorMain"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/pwdText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/usernameText"
+            android:layout_alignStart="@+id/usernameText"
+            android:layout_below="@+id/usernameText"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="@string/app_password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorMain" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/pwdText"
+            android:layout_alignLeft="@+id/pwdText"
+            android:layout_alignRight="@+id/pwdText"
+            android:layout_alignStart="@+id/pwdText"
+            android:layout_below="@+id/pwdText"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/login_button"
+            android:text="@string/app_login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/login_button"
+            android:layout_alignLeft="@+id/login_button"
+            android:layout_alignRight="@+id/login_button"
+            android:layout_alignStart="@+id/login_button"
+            android:layout_below="@+id/login_button"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/register_button"
+            android:text="@string/app_register"
+            android:textColor="@color/colorMain" />
+
+        <Button
+            android:id="@+id/forget_pwd_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/register_button"
+            android:layout_alignRight="@+id/register_button"
+            android:layout_below="@+id/register_button"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/app_forgetPwd"
+            android:textColor="@color/textDarkGrey"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            app:srcCompat="@mipmap/logo" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+

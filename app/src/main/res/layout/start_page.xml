@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/start_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/logo"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/start_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="修鲜水果管家"
+        android:textColor="@color/colorMain"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+</LinearLayout>

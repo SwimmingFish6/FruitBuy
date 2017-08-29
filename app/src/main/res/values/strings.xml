@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_title">标题栏</string>
+    <string name="app_name">修鲜水果管家</string>
+    <string name="app_login">登录</string>
+    <string name="app_register">注册</string>
+    <string name="app_logout">注销</string>
+    <string name="app_save">保存</string>
+    <string name="app_username">用户名</string>
+    <string name="app_realname">真实姓名</string>
+    <string name="app_password">密码</string>
+    <string name="app_phone">电话</string>
+    <string name="app_email">邮箱</string>
+    <string name="app_checkPassword">确认密码</string>
+    <string name="app_regLogin">已有账号?直接登录</string>
+    <string name="app_forgetPwd">忘记密码?</string>
+    <string name="app_changePwd">修改密码</string>
+
+    <string name="column_fruits_management">水果管理</string>
+    <string name="column_order_management">订单管理</string>
+    <string name="column_setting">账号设置</string>
+    <string name="column_add_fruits">水果添加</string>
+    <string name="column_onekey_buy">一键下单</string>
+
+    <string name="app_bankcard">银行卡信息</string>
+    <string name="app_bankcardNo">卡号</string>
+    <string name="app_bankbind">绑定</string>
+    
+    <string name="app_account_management">账号设置</string>
+    <string name="app_bank_card_setting">银行卡设置</string>
+    <string name="app_delivery_address">收货地址设置</string>
+    <string name="app_auto_buy_on">自动购买</string>
+    <string name="app_message_reminder">消息提醒</string>
+    <string name="app_address">收货地址</string>
+
+    <string name="app_fruit">水果</string>
+    <string name="app_min_buy">购买阈值</string>
+    <string name="app_price_range">价格区间</string>
+    <string name="app_max_buy">库存上限</string>
+    <string name="app_choose_saler">商家选择</string>
+
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirm_pwd">确认新密码</string>
+    <string name="send_new_pwd">发送新密码</string>
+    <array name="fruit_name">
+        <item>苹果</item>
+        <item>西瓜</item>
+        <item>橘子</item>
+        <item>雪梨</item>
+        <item>芒果</item>
+        <item>菠萝</item>
+    </array>
+
+    <string name="status_unaccepted">未接单</string>
+    <string name="status_notdelivered">未派送</string>
+    <string name="status_notreceived">未收货</string>
+    <string name="status_finished">已完成</string>
+
+</resources>
